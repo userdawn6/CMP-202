@@ -1,14 +1,22 @@
-class Main {
-
+public class Main {
     public static void main(String[] args) {
+        User user = new User();
 
-        String username = "dawn";
+        String loginResult = user.login();
+
+        System.out.println(loginResult);
+    }
+
+    static class User {
+        String username = "Dawn";
         String password = "password";
 
-        if (username.equals("dawn") && password.equals("password")){
-            System.out.println("success login");
-        } else {
-            System.out.println("failed");
+        String login() {
+            if (username.equals("Dawn") && password.equals("password")) {
+                return "Login successful!";
+            } else {
+                return "Invalid username or password. Please try again.";
+            }
         }
     }
 }

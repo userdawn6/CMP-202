@@ -41,7 +41,7 @@ public class stack {
         }else{
             System.out.println("elements of array(stack): ");
             for (int i = 0; i <= top; i++){
-                System.out.println(array[i] + " ");
+                System.out.println(array[i]);
         }
         }
     }
